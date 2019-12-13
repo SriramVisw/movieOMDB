@@ -1,0 +1,18 @@
+<h1>Seahc for a movie.</h1>
+
+<!-- action: The resource/URL where data is to be sent for processing when the form is submitted. 
+If this is not set (or set to an empty string), then
+the form will be submitted back to the current page URL.
+
+method: The HTTP method used to send the data: POST or GET.
+The POST method should always be used if the data is going to result
+in a change to the server's database, because this can be made more 
+resistant to cross-site forgery request attacks.
+The GET method should only be used for forms that don't change 
+user data (e.g. a search form). It is recommended for when you 
+want to be able to bookmark or share the URL. -->
+
+<form action="/results" method="GET">
+  <input type="text" placeholder="search term" name="search" />
+  <input type="submit" />
+</form>
